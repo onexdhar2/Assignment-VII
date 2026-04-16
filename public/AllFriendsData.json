@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Rahul Sharma",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "rahul.sharma@gmail.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "We studied computer science together in Delhi. Used to code late nights and discuss startup ideas.",
+    "goal": 14,
+    "next_due_date": "2026-03-25"
+  },
+  {
+    "id": 2,
+    "name": "Ananya Das",
+    "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+    "email": "ananya.das@gmail.com",
+    "days_since_contact": 10,
+    "status": "almost due",
+    "tags": ["school", "best friend"],
+    "bio": "School friend from Guwahati. We still share books and talk about life goals and family.",
+    "goal": 12,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 3,
+    "name": "Imran Khan",
+    "picture": "https://randomuser.me/api/portraits/men/75.jpg",
+    "email": "imran.khan@gmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["gym", "fitness"],
+    "bio": "Met at the gym last year. We motivate each other to stay consistent and healthy.",
+    "goal": 10,
+    "next_due_date": "2026-04-21"
+  },
+  {
+    "id": 4,
+    "name": "Priya Mehta",
+    "picture": "https://randomuser.me/api/portraits/women/68.jpg",
+    "email": "priya.mehta@gmail.com",
+    "days_since_contact": 16,
+    "status": "overdue",
+    "tags": ["work", "designer"],
+    "bio": "Worked together on a freelance UI/UX project. She has an amazing sense of design.",
+    "goal": 14,
+    "next_due_date": "2026-04-01"
+  },
+  {
+    "id": 5,
+    "name": "Arjun Roy",
+    "picture": "https://randomuser.me/api/portraits/men/12.jpg",
+    "email": "arjun.roy@gmail.com",
+    "days_since_contact": 11,
+    "status": "almost due",
+    "tags": ["startup", "tech"],
+    "bio": "Met at a hackathon in Bangalore. Always discussing new product ideas and tech trends.",
+    "goal": 12,
+    "next_due_date": "2026-04-19"
+  },
+  {
+    "id": 6,
+    "name": "Sneha Patel",
+    "picture": "https://randomuser.me/api/portraits/women/21.jpg",
+    "email": "sneha.patel@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["family friend", "travel"],
+    "bio": "Family friend who loves traveling. We often plan trips and share travel experiences.",
+    "goal": 10,
+    "next_due_date": "2026-04-23"
+  },
+  {
+    "id": 7,
+    "name": "Rohit Verma",
+    "picture": "https://randomuser.me/api/portraits/men/55.jpg",
+    "email": "rohit.verma@gmail.com",
+    "days_since_contact": 25,
+    "status": "overdue",
+    "tags": ["cricket", "neighbor"],
+    "bio": "Neighbor and cricket buddy. We used to play every weekend during school days.",
+    "goal": 15,
+    "next_due_date": "2026-03-30"
+  },
+  {
+    "id": 8,
+    "name": "Meghna Sen",
+    "picture": "https://randomuser.me/api/portraits/women/50.jpg",
+    "email": "meghna.sen@gmail.com",
+    "days_since_contact": 8,
+    "status": "on-track",
+    "tags": ["music", "college"],
+    "bio": "College band mate. She sings beautifully and we still collaborate on music occasionally.",
+    "goal": 14,
+    "next_due_date": "2026-04-22"
+  }
+]
