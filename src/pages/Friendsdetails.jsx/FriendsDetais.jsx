@@ -1,21 +1,22 @@
 // import { use } from "react";
+import { useContext, useState } from "react";
 import { useLoaderData, useParams } from "react-router";
+import FriendsContext, { FriendContext } from "../../context/FriendsContext";
 
 const FriendsPromies = fetch("/AllFriendsData.json").then((res) => res.json());
 
 const FriendsDetais = () => {
   const { id } = useParams();
-  console.log(id);
+  // console.log(id);
 
   // const friends = use(FriendsPromies);
   const friends = useLoaderData();
-  console.log(friends);
+  // console.log(friends);
   const expectedFriend = friends.find((friend) => friend.id === parseInt(id));
-  console.log(expectedFriend);
+  // console.log(expectedFriend);
 
-  const handleMarkAsContacted = () => {
-    
-  }; 
+  const {handleMarkAsContacted,storedFriends} = useContext(FriendContext);
+
 
   return (
     <div className="flex justify-center items-center h-screen">
@@ -58,7 +59,14 @@ const FriendsDetais = () => {
         </div>
         <div>Quick Check-In</div>
         <div className="flex">
-          <button className="btn btn-active">Call</button>
+          <button
+            className="btn btn-active"
+            onClick={() => {
+              handleMarkAsContacted(expectedFriend);
+            }}
+          >
+            Call
+          </button>
           <button className="btn btn-active">Text</button>
           <button className="btn btn-active">Video</button>
         </div>
