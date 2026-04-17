@@ -15,8 +15,8 @@ const FriendsDetais = () => {
   const expectedFriend = friends.find((friend) => friend.id === parseInt(id));
   // console.log(expectedFriend);
 
-  const {handleMarkAsContacted,storedFriends} = useContext(FriendContext);
-
+  const { handleMarkAsContacted, handleMarkAsTexted } =
+    useContext(FriendContext);
 
   return (
     <div className="flex justify-center items-center h-screen">
@@ -67,7 +67,14 @@ const FriendsDetais = () => {
           >
             Call
           </button>
-          <button className="btn btn-active">Text</button>
+          <button
+            className="btn btn-active"
+            onClick={() => {
+              handleMarkAsTexted(expectedFriend);
+            }}
+          >
+            Text
+          </button>
           <button className="btn btn-active">Video</button>
         </div>
       </div>
