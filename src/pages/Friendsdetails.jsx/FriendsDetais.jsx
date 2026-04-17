@@ -13,15 +13,23 @@ const FriendsDetais = () => {
   const expectedFriend = friends.find((friend) => friend.id === parseInt(id));
   console.log(expectedFriend);
 
+  const handleMarkAsContacted = () => {
+    
+  }; 
+
   return (
     <div className="flex justify-center items-center h-screen">
       <div>
-        <img src="" alt="" />
-        <div>Emma Wilson</div>
-        <div>Overdue</div>
-        <div>family</div>
-        <div>"Former colleague, great mentor"</div>
-        <div>Preferred: email</div>
+        <img src={expectedFriend?.picture} alt={expectedFriend?.picture} />
+        <h2 className="font-semibold text-2xl text-[#244D3F]">
+          {expectedFriend?.name}
+        </h2>
+        <span className="bg-red-500 text-white py-1 px-3 rounded-full">
+          {expectedFriend?.status}
+        </span>
+        <p className="">family</p>
+        <p>{expectedFriend?.tags?.join(", ")}</p>
+        <p>{expectedFriend?.email}</p>
         <div>Snooze 2 weeks</div>
         <div>Archive</div>
         <div>Delete</div>
@@ -29,15 +37,15 @@ const FriendsDetais = () => {
       <div>
         <div className="flex">
           <div>
-            <div>62</div>
+            <p>{expectedFriend?.days_since_contact}</p>
             <div>Days Since Contact</div>
           </div>
           <div>
-            <div>30</div>
+            <div>{expectedFriend?.goal}</div>
             <div>Goal (Days)</div>
           </div>
           <div>
-            <div>62</div>
+            <div>{expectedFriend?.next_due_date}</div>
             <div>Next Due</div>
           </div>
         </div>
@@ -50,9 +58,9 @@ const FriendsDetais = () => {
         </div>
         <div>Quick Check-In</div>
         <div className="flex">
-          <div>Call</div>
-          <div>Text</div>
-          <div>Video</div>
+          <button className="btn btn-active">Call</button>
+          <button className="btn btn-active">Text</button>
+          <button className="btn btn-active">Video</button>
         </div>
       </div>
     </div>

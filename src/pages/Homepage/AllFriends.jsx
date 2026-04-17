@@ -13,10 +13,10 @@ const AllFriends = () => {
           to={`/friendsDetails/${friend.id}`}
           className="border p-4 rounded-lg mb-4"
         >
-          {/* <img src={friend.avatar} alt={friend.name} className="w-16 h-16 rounded-full" /> */}
+          <img src={friend.picture} className="w-16 h-16 rounded-full" />
           <h3 className="text-xl font-bold">{friend.name}</h3>
           <p>{friend.days_since_contact}</p>
-          <p>{friend.tags}</p>
+          <p>{friend.tags?.join(", ")}</p>
           <p>{friend.status}</p>
         </Link>
       ))}
