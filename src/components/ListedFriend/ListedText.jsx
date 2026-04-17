@@ -14,7 +14,7 @@ const ListedText = () => {
               alt={friend.name}
             />
             <div className="ml-5"></div>
-            <h2 className="font-semibold text-xl text-[#244D3F]">
+            <h2 className="font-semibold text-xl text-[#244D3F]"> Text with -
               {friend.name}
             </h2>
             <p className="text-gray-600 pl-10">{friend.next_due_date}</p>

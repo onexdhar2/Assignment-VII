@@ -8,7 +8,7 @@ const AllFriends = () => {
   return (
     <div>
       <h2 className="text-center text-2xl font-semibold mt-10">Your Friends</h2>
-      <div className="grid grid-cols-4 mt-10 items-center justify-items-center">
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 mt-10 items-center justify-items-center">
         {friends.map((friend) => (
           <Link
             key={friend.id}
