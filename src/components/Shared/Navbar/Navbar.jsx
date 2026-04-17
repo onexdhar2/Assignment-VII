@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router";
 
-
 const Navbar = () => {
   const links = (
     <>
@@ -16,21 +15,18 @@ const Navbar = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink to={"/timeline"} className={({ isActive }) =>
-          isActive ? "bg-[#244D3F] p-3 border rounded-xl text-white" : ""
-        }>
+        <NavLink
+          to={"/timeline"}
+          className={({ isActive }) =>
+            isActive ? "bg-[#244D3F] p-3 border rounded-xl text-white" : ""
+          }
+        >
           Timeline
         </NavLink>
       </li>
+
       <li>
-        <NavLink to={"/stats"} className={({ isActive }) =>
-          isActive ? "bg-[#244D3F] p-3 border rounded-xl text-white" : ""
-        }>
-          Stats
-        </NavLink>
-      </li>
-      <li>
-        <NavLink to={"/page to read"}>Page to read</NavLink>
+        <NavLink to={"/page to read"}>Stats</NavLink>
       </li>
     </>
   );

@@ -6,6 +6,7 @@ export const FriendContext = React.createContext();
 const FriendsContext = ({ children }) => {
   const [storedFriends, setStoredFriends] = useState([]);
   const [storedText, setStoredText] = useState([]);
+  const [storedVideo, setStoredVideo] = useState([]);
 
   const handleMarkAsContacted = (friendToAdd) => {
     console.log(friendToAdd, "friends");
@@ -33,6 +34,18 @@ const FriendsContext = ({ children }) => {
   }
 };
 
+ const handleMarkAsVideo = (friendToAdd) => {
+  const isExistFriend = storedVideo.find(
+    (friend) => friend.id === friendToAdd.id
+  );
+
+  if (isExistFriend) {
+    toast.error("Already Marked as Video");
+  } else {
+    setStoredVideo([...storedVideo, friendToAdd]);
+    toast.success(`${friendToAdd.name} Marked as Video`);
+  }
+};
   const data = {
     storedFriends,
     setStoredFriends,
@@ -40,6 +53,9 @@ const FriendsContext = ({ children }) => {
     storedText,
     setStoredText,
     handleMarkAsTexted,
+    storedVideo,
+    setStoredVideo,
+    handleMarkAsVideo,  
   };
   return (
     <FriendContext.Provider value={data}>{children}</FriendContext.Provider>
