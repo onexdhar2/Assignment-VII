@@ -1,6 +1,14 @@
-Add a well-designed README.md to your GitHub repository that includes:
+Name of your project:
 
-Name of your project
-A short description
-Technologies you used
-3 key features of your project
+The name of my project is KeenKeeper.
+
+A short description:
+
+Its a social media platform.Where a person connect with friend.A person can connect with his relatives and friends.
+
+Technologies you used:
+Html, Css, Javascript, Tailwind, React, React Router, React Toastify.
+
+
+
+
